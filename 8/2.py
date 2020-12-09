@@ -17,13 +17,11 @@ def run(x):
 			return
 		used.append(sp)
 		command = x[sp].split(" ")
-		if command[0] == "nop":
-			sp += 1
 		if command[0] == "acc":
 			acc += int(command[1])
-			sp += 1
 		if command[0] == "jmp":
-			sp += int(command[1])
+			sp += int(command[1]) -1
+		sp +=1
 
 for i in range(len(prog)):
 	y = copy.deepcopy(prog)

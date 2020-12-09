@@ -1,7 +1,4 @@
-import sys
-
 file = open("input", "r")
-
 
 input = ""
 for line in file:
@@ -47,12 +44,6 @@ for i in range(len(data)):
 			continue
 		valid +=1
 	except ValueError:
-#		print(data[i])
-#		import traceback
-#		msg = str(sys.exc_info()[0]) + "\n"
-#		msg = msg + str(sys.exc_info()[1]) + "\n"
-#		msg = msg + str(traceback.format_exc())
-#		print(msg)
 		pass
 
 print(valid)

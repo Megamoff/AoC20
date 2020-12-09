@@ -7,6 +7,6 @@ for line in file:
 	char = line[line.index(" ") +1: line.index(":")]
 	word = line[line.index(":") +2: -1]
 	count = word.count(char)
-	if (word[min-1: min] == char) != (word[max-1:max] == char):
+	if count <= max and count >= min:
 		valid +=1
 print(valid)
