@@ -1,0 +1,5 @@
+Part 1:
+At this task python showed its full potential. Basicly split the input at every "\n\n" to separate the groups. After that iterate through the groups, remove newlines and cast them to a set. This removes duplicates (Sets cant contain duplicates). Adding up the length of each set gives the answer.
+
+Part 2:
+This is a bit more tricky, sadly there is no built in python function to keep only parts which are part of every element. So you have to loop over every group manually and keep only those that they have in common.

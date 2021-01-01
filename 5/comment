@@ -1,0 +1,9 @@
+keywords/hints: Binary numbers, col/row is irrelevant
+
+So this is where the fun begins... after a brief look I realised the seat Ids are basicly having binary numbers. Reading in the input, replacing the chars with 1/0 and using them as numbers did the trick.
+
+Part 1:
+sorting the array and printing the last element gives you exactly what you want.
+
+Part 2:
+A bit more triky, but the point where the next element is more than one bigger than the current ist the point you are looking for.

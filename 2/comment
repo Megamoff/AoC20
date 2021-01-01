@@ -1,0 +1,5 @@
+Part 1:
+The biggest part here is parsing your input data, after that its just counting and comparing.
+
+Part 2:
+This is easier as before, you dont even have to count anymore. The if statement is a trick to get a shorter version of xor.

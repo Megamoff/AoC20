@@ -1,0 +1,9 @@
+keywords/hints: 2D-Array, Modulo
+
+Part 1:
+Nothing to fancy, just pull the input in a 2D-Array and loop through it. Iterator % 3 gets the horizontal coordinate.
+
+Part 2:
+Basicly the same just with adjusted x/y stepwidth.
+
+After the puzzle i noticed a common array would have been enough since I'm using Python and there i can use a String like an array. I also added all slopes so you dont have to write them down and multiply them by hand.

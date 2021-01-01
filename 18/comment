@@ -1,0 +1,8 @@
+Part 1:
+
+Part 2:
+ok, this was really annoying... i set up every thing and it ran through. Upon entering the solution AoC told me it was wrong. Ich double checked everything, ran the example input several times trying to find the error. There was none. After a finishing Day 25 Part 1 i needed to complete this in order to get to Part 2. So i came back. I downloaded someones solution to check wether the Problem is on my side, or the input/solution is wrong. Turns out their solution is 534 600 below mine. This is enough to not be an off-by-one error, and to less to be a basic flaw. So i began removing parts of the input to see in which equation(s) the problem occurs. Turns out it was just one equation which caused all this trouble: (4 + 7 * (2 * 7) + 7 * 6 * (5 * 9)) * 2. To understand the error i had to go through it step by step. The steps are:
+(4 + 7 * (2 * 7) + 7 * 6 * (5 * 9)) * 2
+(4 + 7 * 14 + 7 * 6 * (5 * 9)) * 2
+(4 + 7 * 14 + 7 * 6 * 45) * 2
+until here everything was fine. In the next line my algorythm calculated 4+7 = 11 and replaced it. Unfortunately there are two different occurances of this String: 4+7 and (1)4+7. So instead of 14+7 = 21 in the next iteration it just became 111. After fixing this bug. Everything was correct. The thing is, i would have never found that error without having another persons solution to narrow down the problem to the equation shown.

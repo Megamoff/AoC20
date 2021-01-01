@@ -1,0 +1,9 @@
+keywords/hints: Trees, Deep-first search, Breadt-first search
+
+After the first heart-attack while looking at the input, i noticed it was basicly describing a tree model. So I began processing the data. I removed unneccessary words, commas, dots and everything else i dont need. After that i assigned every colour a number starting with 0. replacing that name with a number made the calculation far easier since i don't have to search the whole data every time. If im searching for "32" i know exactly where to find whats in it.
+
+Part 1:
+For this part i removed the numbers too, since the question was just how many different bags are possible. Basicly the algorithm adds every bag that can contain every so far found bag. Between iterations it casts the whole list to a set to get rid of duplicates.
+The later version uses only one list (no set neccesary because it checks duplicates before adding). Also the list is only iterated once.
+
+Part 2:

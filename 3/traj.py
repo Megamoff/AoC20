@@ -14,6 +14,6 @@ for line in file:
 
 count = 0
 for j in range(0, i):
-	if map[2*j][(1*j) % 31]:
+	if map[1*j][(3*j) % 31]:
 		count += 1
 		print(count)

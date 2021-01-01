@@ -1,0 +1,7 @@
+I absolutly hated this day, bc. i hate parsing in data and i hate sanatizing input data. So lets get this over with.
+
+Part 1:
+Fairly easy, split your input at every "\n\n" to separate data sets. The split data at every "\n" or " " to get key:value pairs. Now just check if they exist. Originally I used to get their index together with try/catch to catch and ignore exceptions. Later I noticed I could just check if "key" is in the data String.
+
+Part 2:
+So this was the real pain in the ass... We have to check every key:value if the match the criteria... originally I made a huge mess here with try-catch and huge array parsing lines. In the later version I used a Dictionary to put it there as "key": "value", this made things much less .... confusing. The rest remained basicly the same: tons of if-statements to check whether the data is allowed or not.
